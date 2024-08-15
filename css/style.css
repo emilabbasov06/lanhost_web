@@ -538,6 +538,7 @@ header .container nav ul a:hover {
     padding: 1rem;
     font-size: 1rem;
     background-color: var(--light-gray);
+    color: var(--heading-color);
 }
 
 .contact .container .sections .form textarea {
@@ -548,6 +549,7 @@ header .container nav ul a:hover {
     padding: 1rem;
     font-size: 1rem;
     background-color: var(--light-gray);
+    color: var(--heading-color);
 }
 
 .contact .container .sections .info h3 {
