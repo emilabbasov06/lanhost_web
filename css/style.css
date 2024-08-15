@@ -15,6 +15,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
 }
 
 .del {
@@ -31,7 +32,6 @@
     padding: 1rem;
     font-size: 1.2rem;
     font-weight: bolder;
-    font-family: 'Nunito', sans-serif;
     transition: 0.5s all;
     cursor: pointer;
 }
@@ -51,8 +51,8 @@
     background-color: var(--main-color-blue);
 }
 
-body {
-    font-family: 'Nunito', sans-serif;
+html {
+    scroll-behavior: smooth;
 }
 
 header {
@@ -523,6 +523,33 @@ header .container nav ul a:hover {
     gap: 1rem;
 }
 
+.contact .container .sections form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact .container .sections .form input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid gray;
+    outline: none;
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: var(--light-gray);
+}
+
+.contact .container .sections .form textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid gray;
+    outline: none;
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: var(--light-gray);
+}
+
 .contact .container .sections .info h3 {
     font-weight: bolder;
     color: var(--heading-color);
@@ -565,4 +592,22 @@ header .container nav ul a:hover {
 
 .contact .container .sections .info .social-media div:hover {
     background-color: var(--main-color-orange);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0rem;
+    background-color: var(--light-gray);
+}
+
+footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .container p {
+    color: var(--paragraph-color)
 }
