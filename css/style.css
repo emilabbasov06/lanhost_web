@@ -88,7 +88,7 @@ header .container .logo a .logo-part-two {
 }
 
 header .container nav {
-    width: 35%;
+    width: 40%;
 }
 
 header .container nav ul {
@@ -612,4 +612,185 @@ footer .container {
 
 footer .container p {
     color: var(--paragraph-color)
+}
+
+@media(max-width: 1100px) {
+
+    header .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+    }
+
+    header .container .logo {
+        font-size: 3rem;
+    }
+
+    header .container nav {
+        display: none;
+    }
+
+    .welcome .container .welcome-image img {
+        width: 400px;
+    }
+
+    .choice .container p {
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width: 950px) {
+    .welcome .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .welcome .container .welcome-image {
+        display: none;
+    }
+
+    .offers .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .offers .container .offer-card {
+        width: 45%;
+    }
+
+    .plan-section .container .plans {
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    .plan-section .container .plans .plan {
+        width: 45%;
+    }
+
+    .choice .container p {
+        font-size: 1rem;
+    }
+
+    .choice .container button {
+        font-size: 1rem;
+    }
+
+    .services-section .container .services {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .services-section .container .services .service {
+        width: 45%;
+    }
+
+    .newsletter .container p {
+        font-size: 1rem;
+    }
+
+    .newsletter .container button {
+        font-size: 1rem;
+    }
+
+    .contact .container .sections {
+        flex-direction: column;
+    }
+
+    .contact .container .sections .form, .contact .container .sections .info {
+        width: 100%;
+    }
+}
+
+@media(max-width: 800px) {
+    .container {
+        width: 95%;
+    }
+
+    .offers .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .offers .container .offer-card {
+        width: 100%;
+    }
+
+    .plan-section .container .plans {
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    .plan-section .container .plans .plan {
+        width: 100%;
+    }
+
+    .choice .container p {
+        font-size: 1rem;
+    }
+
+    .choice .container button {
+        font-size: 1rem;
+    }
+
+    .services-section .container .services {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .services-section .container .services .service {
+        width: 100%;
+        background-color: var(--light-gray);
+    }
+
+    .newsletter .container p {
+        text-align: center;
+    }
+
+    .newsletter .container button {
+        font-size: 1rem;
+    }
+
+    .newsletter .container input {
+        width: 90%;
+    }
+
+    .plan-info ul {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        list-style: none;
+    }
+
+    .contact .container .sections {
+        flex-direction: column;
+    }
+
+    .bg-image-laptop, .bg-image-data, .bg-image-speed {
+        display: none;
+    }
+
+    .why-choose-us .container .choices {
+        width: 100%;
+    }
+
+    .why-choose-us .container .choices .why-choice {
+        width: 100%;
+        text-align: center;
+        background-color: var(--light-gray);
+        padding-inline: 1rem;
+    }
+
+    .why-choose-us .container .choices .why-choice .choice-content {
+        width: 100%;
+    }
+
+    .why-choose-us .container .choices .why-choice .choice-content:nth-child(2) {
+        text-align: center;
+    }
 }
