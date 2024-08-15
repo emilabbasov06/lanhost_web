@@ -8,6 +8,7 @@
     --gray: #6B7591;
     --light-gray: #F5F5F5;
     --black: #333333;
+    --white: #FFFFFF;
 }
 
 * {
@@ -16,35 +17,80 @@
     box-sizing: border-box;
 }
 
+.del {
+    text-decoration: line-through;
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+.button {
+    border: none;
+    border-radius: 10px;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    font-family: 'Nunito', sans-serif;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: var(--white);
+    background-color: var(--main-color-orange);
+}
+
+.white-black {
+    color: var(--black);
+    background-color: var(--white);
+}
+
+.blue-white {
+    color: var(--white);
+    background-color: var(--main-color-blue);
+}
+
 body {
     font-family: 'Nunito', sans-serif;
 }
 
 header {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 88%;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     padding: 0.5rem;
 }
 
-header .logo {
+header .container .logo {
     font-size: 2.2rem;
     font-weight: bolder;
 }
 
-header .logo .logo-part-one {
+header .container .logo a {
+    text-decoration: none;
+}
+
+header .container .logo a .logo-part-one {
     color: var(--main-color-orange);
 }
 
-header .logo .logo-part-two {
+header .container .logo a .logo-part-two {
     color: var(--main-color-blue);
 }
 
-header nav {
+header .container nav {
     width: 35%;
 }
 
-header nav ul {
+header .container nav ul {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -52,13 +98,45 @@ header nav ul {
     list-style: none;
 }
 
-header nav ul a {
+header .container nav ul a {
     text-decoration: none;
     color: var(--black);
     font-weight: bolder;
     transition: 0.5s all;
 }
 
-header nav ul a:hover {
+header .container nav ul a:hover {
     color: var(--main-color-orange);
+}
+
+.welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color-blue);
+    color: var(--white);
+    padding: 3rem 0rem;
+}
+
+.welcome .container .welcome-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.welcome .container .welcome-content h2 {
+    font-size: 3rem;
+}
+
+.welcome .container .welcome-content p {
+    font-size: 1.5rem;
+}
+
+.welcome .container .welcome-content ul {
+    list-style-position: inside;
+    padding: 1rem;
+}
+
+.welcome .container .welcome-content button {
+    width: fit-content;
 }
