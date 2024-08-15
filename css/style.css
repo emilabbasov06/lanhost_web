@@ -471,3 +471,98 @@ header .container nav ul a:hover {
 .newsletter .container button {
     font-size: 1.2rem;
 }
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0rem;
+}
+
+.contact .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.contact .container .contact-welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.contact .container .contact-welcome h2 {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--heading-color);
+}
+
+.contact .container .contact-welcome p {
+    color: var(--paragraph-color);
+}
+
+.contact .container .sections {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.contact .container .sections .form, .contact .container .sections .info {
+    width: 45%;
+    padding: 2rem;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--light-gray);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact .container .sections .info h3 {
+    font-weight: bolder;
+    color: var(--heading-color);
+}
+
+.contact .container .sections .info p {
+    color: var(--paragraph-color);
+}
+
+.contact .container .sections .info a {
+    text-decoration: none;
+    color: var(--paragraph-color);
+    transition: 0.5s all;
+}
+
+.contact .container .sections .info a:hover {
+    color: var(--main-color-orange);
+}
+
+.contact .container .sections .info .social-media {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.contact .container .sections .info .social-media div {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--main-color-blue);
+    color: var(--white);
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+.contact .container .sections .info .social-media div a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.contact .container .sections .info .social-media div:hover {
+    background-color: var(--main-color-orange);
+}
