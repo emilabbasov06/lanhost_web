@@ -179,3 +179,104 @@ header .container nav ul a:hover {
     align-items: center;
     gap: 0.5rem;
 }
+
+.plan-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0rem;
+}
+
+.plan-section .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.plan-section .container .plan-section-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+}
+
+.plan-section .container .plan-section-content h2 {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--heading-color);
+}
+
+.plan-section .container .plan-section-content p {
+    color: var(--paragraph-color);
+}
+
+.plan-section .container .plans {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.plan-section .container .plans .plan {
+    width: 30%;
+    background-color: var(--light-gray);
+    padding: 2rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.plan-section .container .plans .plan .plan-welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.plan-section .container .plans .plan .plan-welcome h3 {
+    font-size: 2rem;
+    font-weight: bolder;
+    color: var(--gray);
+}
+
+.plan-section .container .plans .plan .plan-welcome p {
+    font-size: 4rem;
+    color: var(--black);
+    text-align: center;
+}
+
+.plan-section .container .plans .plan .plan-welcome sup, .plan-section .container .plans .plan .plan-welcome sub {
+    font-size: 1.5rem;
+}
+
+.plan-section .container .plans .plan .plan-info ul {
+    color: var(--paragraph-color);
+}
+
+.plan-section .container .plans .plan button {
+    font-size: 1rem;
+}
+
+.choice {
+    display: flex;
+    justify-content: center;
+    background-color: var(--main-color-blue);
+    padding: 1rem 0rem;
+}
+
+.choice .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.choice .container p {
+    font-size: 2.2rem;
+    font-weight: bolder;
+    color: var(--white);
+}
